@@ -73,7 +73,7 @@
     "start": "react-scripts start",
     "start:prod": "react-scripts start",
     "build": "react-scripts build",
-    "deploy": "scp -r ./build/* root@207.180.225.238:/www/wwwroot/console.modcont.com",
+    "deploy": "scp -r ./build/* root@207.180.225.238:/www/wwwroot/liveapp.modcont.com",
     "test": "react-scripts test",
     "test:cov": "react-scripts test --coverage",
     "test:debug": "react-scripts --inspect-brk test --runInBand",
