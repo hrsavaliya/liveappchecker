@@ -1,0 +1,65 @@
+// Styles
+// CoreUI Icons Set
+@import '~@coreui/icons/css/coreui-icons.css';
+// Import Flag Icons Set
+@import '~flag-icon-css/css/flag-icon.min.css';
+// Import Font Awesome Icons Set
+@import '~font-awesome/css/font-awesome.min.css';
+// Import Simple Line Icons Set
+@import '~simple-line-icons/css/simple-line-icons.css';
+// Import Main styles for this application
+@import './scss/style.scss';
+
+.is-link {
+  cursor: pointer;
+  color: dodgerblue;
+}
+
+.color-red {
+  color: red;
+}
+
+body {
+  background-color: white;
+}
+
+.account-form {
+  display: inline-block;
+}
+.add-account{
+  margin-bottom: 20px;
+}
+.create-user{
+  width: 545px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slick-prev:before, .slick-next:before {
+  color: black !important;
+}
+
+.slick-next {
+  right: -11px !important;
+}
+.ant-select-arrow {
+  top: 33%;
+}
+.ant-select-selector{
+  width: 250px !important;
+}
+.ant-input-group{
+  width: 25%;
+  margin-bottom: 20px;
+}
+.refresh {
+  margin-right: 60px;
+  margin-left: auto;
+}
+.grabData{
+  .ant-input-group-wrapper{
+    width: 120%;
+  }
+}
+
