@@ -227,14 +227,23 @@ const GrabData = () => {
       sorter: (a, p) => toString(a.title).toLowerCase().localeCompare(toString(p.title).toLowerCase()),
     },
     {
-      title: "Url",
-      key: "isTerminator",
+      title: "AppId",
+      key: "appId",
       render: (record, data) => (
         <a href={data.url} target="_blank">
-          <img src={redirect} height={20} width={20}/>
+          <span>{data.appId}</span>
         </a>
       )
     },
+    // {
+    //   title: "Url",
+    //   key: "isTerminator",
+    //   render: (record, data) => (
+    //     <a href={data.url} target="_blank">
+    //       <img src={redirect} height={20} width={20}/>
+    //     </a>
+    //   )
+    // },
     {
       title: "Status",
       key: "_id",
