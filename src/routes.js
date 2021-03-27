@@ -9,7 +9,8 @@ const signUp = React.lazy(() => import('./views/SignUp'));
 const setting = React.lazy(() => import('./views/Setting'));
 
 const routes = [
-  {path: '/', name: 'Home', component: DefaultLayout, exact: true},
+  // {path: '/', name: 'Home', component: DefaultLayout, exact: true},
+  {path: '/', name: 'LiveAppChecker', component: GrabData, exact: true},
   {path: '/dashboard', name: 'Dashboard', component: Dashboard},
   {path: '/accounts', name: 'Accounts', component: Accounts},
   {path: '/grab-data', name: 'LiveAppChecker', component: GrabData},

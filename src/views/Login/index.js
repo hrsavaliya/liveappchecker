@@ -33,7 +33,7 @@ const LogIn = (props) => {
     if (res && res.data && res.data.success) {
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("_id",JSON.stringify(res.data.login));
-      props.history.push("/apps");
+      props.history.push("/grab-data");
     } else {
       message.error("User not Found")
     }

@@ -107,8 +107,11 @@ const GrabData = () => {
     setModal(false)
   };
 
-  const handleChange = ({target: {value}}) => {
-    setAppIp(value)
+  const handleChange = (e) => {
+    setAppIp(e.target.value)
+    if(e.key === 'Enter' || e.keyCode === 13){
+      onSubmit();
+    }
   };
 
   const showConfirm = (record) => {
@@ -250,10 +253,10 @@ const GrabData = () => {
       render: (record, data) => (
         <>
           {
-            data.isTerminator === true ? <span style={{color: "red"}}>
+            data.isTerminator !== undefined && (data.isTerminator === true ? <span style={{color: "red"}}>
             Terminated
           </span> :
-              <span>Live</span>
+              <span>Live</span>)
           }
         </>
       )
@@ -291,6 +294,7 @@ const GrabData = () => {
               placeholder="Enter App_Id"
               name="appId"
               onChange={handleChange}
+              onKeyPress={handleChange}
             />
           </Form.Item>
         </Col>
