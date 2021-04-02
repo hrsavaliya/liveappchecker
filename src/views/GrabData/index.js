@@ -176,6 +176,7 @@ const GrabData = () => {
     } else {
       message.error("Something went wrong")
     }
+    fetchLength();
     setLoading(false)
   };
 

@@ -2,6 +2,8 @@ require("dotenv").config();
 
 const prod = {
   appUrl: "https://api.modcont.com",
+  // appUrl: 'http://localhost:9000'
+
 };
 
 const dev = {
